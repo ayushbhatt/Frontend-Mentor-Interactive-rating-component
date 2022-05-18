@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="content box ">
+      <div class="img-star">
+        <img src="./images/icon-star.svg" alt="star" />
+      </div>
+      <div class="ratting">
+        <h1>How did we do?</h1>
+      </div>
+      <div class="rating-question">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </div>
+      <div class="rating-options">
+        <button class="rating-button" rating-value="1">1</button>
+        <button class="rating-button" rating-value="2">2</button>
+        <button class="rating-button" rating-value="3">3</button>
+        <button class="rating-button" rating-value="4">4</button>
+        <button class="rating-button last-button" rating-value="5">5</button>
+      </div>
+      <button class="submit-button">submit</button>
+    </div>
+    
+    <div class="submitted-rate box d-none">
+      <img class="submitted-rate_img" src="./images//illustration-thank-you.svg" alt="thank-you">
+      <div class="submitted-rate_selected-rate">
+        <p class="review-data">You selected <span>1</span> out of 5</p>
+      </div>
+      <h2 class="submitted-rate__thanks heading heading--lg">Thank you!</h2>
+      <p class="submitted-rate__text text">We appreciate you taking the time to give a rating. If you ever need more
+        support, don't hesitate to get in
+        touch!</p>
+    </div>
+  </main>
+  <script src="./index.js" defer></script>
+</body>
+</html>
