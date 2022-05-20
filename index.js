@@ -17,10 +17,10 @@ rateButton.forEach((item) =>
   item.addEventListener("click", () => {
     resetbuttons(rateButton);
     toggleClass(item, "active");
-    const rateValue = item.getAttribute("rating-value");
+    const rateValue = item.getAttribute("value");
     submittedRateSpan.textContent = rateValue;
     rated = true;
-    console.log(item.getAttribute("rating-value"));
+    console.log(item.getAttribute("value"));
   })
 );
 
